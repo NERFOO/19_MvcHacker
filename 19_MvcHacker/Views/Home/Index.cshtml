@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FBQCYkwyCIAMecAG.jpg&f=1&nofb=1&ipt=e031a1f5db66a9edfd52815ae598b352b72ab5499a6767fa4e098079fdf5c628&ipo=images" style="width:100%" />
+
+
+    <form method="post" action="https://localhost:7281/Tienda/Productos">
+        <input type="hidden" name="direccion" class="form-control" value="casa hacker" placeholder="Direccion de envio" />
+
+        <button type="submit" class="btn btn-info">Realizar pedido</button>
+
+        <input type="hidden" name="producto" class="form-check" value="Tesla 80000" />
+        <input type="hidden" name="producto" class="form-check" value="IPhone 21 8000" />
+        <input type="hidden" name="producto" class="form-check" value="Ferrari 250000" />
+        <input type="hidden" name="producto" class="form-check" value="Ordenador Portatil 1200" />
+    </form>
+</div>
